@@ -3,8 +3,8 @@ from . import models
 # Register your models here.
 @admin.register(models.Post)
 class PostAdmin(admin.ModelAdmin):
-    fields = ('title','category','apodo','excerpt','content','slug','published','author','status',)
-    list_display = ('title','id','status','author')
+    fields = ('name','category','apodo','adress','nit','phone','published','author','status',)
+    list_display = ('name','id','status','author')
   
 
 @admin.register(models.Category)

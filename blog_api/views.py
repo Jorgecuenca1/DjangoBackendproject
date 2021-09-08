@@ -29,7 +29,7 @@ class PostListDetailfilter(generics.ListAPIView):
     filter_backends = [filters.SearchFilter]
     # '^' Starts-with search.
     # '=' Exact matches.
-    search_fields = ['^slug']
+    search_fields = ['^phone']
 
 
 # Post Admin

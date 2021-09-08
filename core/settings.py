@@ -143,6 +143,7 @@ REST_FRAMEWORK = {
 #IsAuthenticatedOrReadOnly
 CORS_ALLOWED_ORIGINS = [
     "https://127.0.0.1:3000",
+    "https://127.0.0.1:3000",
     "http://localhost:3000"
 ]
 

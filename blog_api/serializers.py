@@ -7,8 +7,8 @@ from django.conf import settings
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ('category', 'id', 'title', 'slug', 'author',
-                  'excerpt', 'content', 'status')
+        fields = ('category', 'id', 'name', 'phone', 'author',
+                  'adress', 'nit', 'status')
 
 
 class UserRegisterSerializer(serializers.ModelSerializer):
