@@ -151,7 +151,11 @@ CORS_ALLOWED_ORIGINS = [
     "https://127.0.0.1:3000",
     "http://localhost:3000",
     "https://prueba.jorgecuenca.info",
-    "https://api3.jorgecuenca.info"
+    "https://api3.jorgecuenca.info",
+    "http://prueba.jorgecuenca.info",
+    "http://api3.jorgecuenca.info",
+    "http://216.250.126.141"
+
 ]
 
 AUTH_USER_MODEL = "users.NewUser"
