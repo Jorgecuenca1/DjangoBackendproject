@@ -149,7 +149,9 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "https://127.0.0.1:3000",
     "https://127.0.0.1:3000",
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://prueba.jorgecuenca.info/",
+    "https://api3.jorgecuenca.info/",
 ]
 
 AUTH_USER_MODEL = "users.NewUser"
