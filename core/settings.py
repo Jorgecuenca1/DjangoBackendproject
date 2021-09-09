@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'lite_db',
         'USER': 'lite',
         'PASSWORD': 'lite',
-        'HOST': 'database',
+        'HOST': 'basededatos',
         'PORT': '5432',
     }
 }
