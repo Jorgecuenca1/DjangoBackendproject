@@ -14,23 +14,23 @@ class Test_Create_Post(TestCase):
         testuser1.save()
 
         test_post = Post.objects.create(
-            category_id=1, name='Post Title', apodo='apodo', excerpt='Post Excerpt', content='Post Content', slug='post-title', author_id=1, status='published')
+            category_id=1, name='Name',  nit='Nit', adress='Direccion', phone='phone', author_id=1, status='published')
         test_post.save()
 
     def test_blog_content(self):
         post = Post.postobjects.get(id=1)
         cat = Category.objects.get(id=1)
         author = f'{post.author}'
-        excerpt = f'{post.excerpt}'
-        apodo = f'{post.apodo}'
+        nit = f'{post.nit}'
         name = f'{post.name}'
-        content = f'{post.content}'
+        adress=f'{post.adress}'
+        phone = f'{post.phone}'
         status = f'{post.status}'
         self.assertEqual(author, 'test_user1')
         self.assertEqual(name, 'Post Title')
-        self.assertEqual(content, 'Post Content')
-        self.assertEqual(excerpt, 'Post Excerpt')
-        self.assertEqual(apodo, 'Post Apodo')
+        self.assertEqual(phone, 'Post Content')
+        self.assertEqual(adress, 'Post Excerpt')
+        self.assertEqual(nit, 'Post Excerpt')
         self.assertEqual(status, 'published')
         self.assertEqual(str(post), "Post Title")
         self.assertEqual(str(cat), "django")

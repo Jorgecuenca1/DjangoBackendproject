@@ -19,7 +19,6 @@ class Post(models.Model):
     )
     name = models.CharField(max_length=100)
     category = models.ForeignKey(Category, on_delete=models.PROTECT,default=1,null=True, blank=True)
-    apodo = models.CharField(max_length=100)
     adress = models.TextField(null=True, blank=True)
     nit = models.TextField(null=True, blank=True)
     phone = models.SlugField(max_length=250, unique_for_date='published',null=True, blank=True)
